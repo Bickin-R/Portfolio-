@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>John Bickin R - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          John Bickin R
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="Email"/>
+            johnbickin.r@gmail.com
+          </div>
+          <div style="clear:both;"></div>
+          <div class="contact_info">
+            <img src="html_finalprojimages/phone.png" alt="Phone"/>
+            +91 98765 43210
+          </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Project Details</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/profile_image.png" class="profile_image" alt="John Bickin R profile image"/>
+      </div>
+
+      <div>
+        <h1>
+          Hi, I'm John Bickin R! <img src="html_finalprojimages/flash.png" width="40px" style="vertical-align: middle;" alt="Highlight icon"/>
+        </h1>
+        <p>
+          I am a passionate Full-Stack Developer and AI Engineer dedicated to building responsive web applications and scalable software systems. With expertise spanning modern frontend frameworks, backend architecture, and intelligent machine learning pipelines (including real-time surveillance and computer vision), I enjoy transforming complex problems into elegant, user-centric solutions. Welcome to my portfolio!
+        </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png" alt="HTML5"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg" alt="JavaScript"/>
+          <h6>JavaScript</h6>
+          <p>1.5 years experience</p>
+        </div>  
+
+        <!-- Three new skills added -->
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png" alt="CSS3"/>
+          <h6>CSS</h6>
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/react.png" alt="React"/>
+          <h6>React</h6>
+          <p>1 year experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/node.png" alt="Node.js"/>
+          <h6>Node.js</h6>
+          <p>1 year experience</p>
+        </div>
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div style="clear:both;"></div>
+
+      <div id="projects-container" class="projects-container">
+        <div class="project-card">
+          <h3>AI Multi-Threat Surveillance Pipeline</h3>
+          <ul>
+            <li>Engineered a comprehensive real-time computer vision surveillance system with person tracking, weapon detection, fire recognition, and violence detection across video streams.</li>
+            <li>Implemented polygonal restricted zone security monitoring with spatial analytics and low-latency PyTorch model deployment.</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+          <h3>AI-Powered Mobile Expense Tracker</h3>
+          <ul>
+            <li>Developed an intuitive cross-platform mobile application leveraging Base44 and smart algorithms for automated personal finance and expense categorization.</li>
+            <li>Designed interactive spending trend charts, dynamic budget forecasting, and real-time cloud data synchronization.</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+          <h3>Interactive Portfolio & Enterprise Showcase</h3>
+          <ul>
+            <li>Constructed a modern single-page responsive portfolio featuring dynamic DOM manipulation, smooth anchor navigation, and modular CSS layout.</li>
+            <li>Built an interactive recommendation submission workflow with real-time feedback validation and dialog notifications.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          John is a remarkably talented engineer with a keen eye for detail. His work on computer vision pipelines and web platforms demonstrated outstanding problem-solving skills and technical depth.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with John on full-stack projects was a seamless experience. He writes clean, modular code, grasps complex requirements quickly, and is an outstanding collaborative team player.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          John's commitment to building responsive user interfaces and dependable systems is exceptional. He always goes the extra mile to ensure top-notch quality and performance.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!-- Home icon that navigates to the top of the page -->
+        <img src="html_finalprojimages/home.png" alt="Home"/>
+      </a>
+    </div>
+
+    <div class="popup" id="popup">
+      <img src="html_finalprojimages/checkmark--outline.svg" alt="Checkmark"/>
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
